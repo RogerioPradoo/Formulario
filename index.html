@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/media.css" rel="stylesheet">
+    <script src="./src/home/get.js" defer></script>
+    <script src="./src/home/post.js"></script>
+    <script src="./src/home/dados.js"></script>
+    <script src="./src/home/script.js"></script>
+    <title>Inscreva-se Formulario </title>
+</head>
+
+<body>
+    <header id="inicio">
+        <div id="title">
+            <h1>Ola Sejam Bem Vindos</h1>
+        </div>
+
+        <ul><a href="#inicio">
+                <li>Inicio</li>
+            </a>
+            <a href="#inscricao">
+                <li>Inscrição</li>
+            </a>
+            <a href="#duvidas">
+                <li>Duvidas</li>
+            </a>
+            <a href="./conta.html" id="inscreva-se-btn">
+                <li>Ja tem uma conta? </li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <h2><span>Inscreva-se agora</span></h2>
+            <h2>de inicio a sua jornada</h2>
+            <p>
+                Venha se conectar com a gente nesse mundo, onde ira aprender: Html, Css, JavaScript, ReactJs,
+                ReactNative, Vue.Js. Desenvolver WebSites até mesmo nas plataformas Mobile e muito mais...
+            </p>
+            <form>
+                <input href="#inscricao" id="inscreva-se-btn" type="submit" value="Inscreva-se...">
+            </form>
+        </aside>
+
+        <article>
+            <img src="./assets/img/tem.jpg" alt="Mundo-Tecnologia">
+        </article>
+    </main>
+
+    <ul>
+        <h1 id="duvidas"><span>Duvidas</span></h1>
+        <h1>Para fazer a inscrição será necessario:</h1><br>
+        <a href="#nome">
+            <li>Nome Completo</li>
+        </a>
+        <a href="#email">
+            <li>E-mail</li>
+        </a>
+        <a href="#password">
+            <li>Senha</li>
+        </a>
+        <a href="#numero">
+            <li>Celular</li>
+        </a>
+        <a href="#rua">
+            <li>Rua</li>
+        </a>
+        <a href="#bairro">
+            <li>Bairro</li>
+        </a>
+        <a href="#complemento">
+            <li>Complemento</li>
+        </a>
+        <a href="#cep">
+            <li>Cep</li>
+        </a>
+        <a href="#cidade">
+            <li>Cidade</li>
+        </a>
+    </ul>
+
+    <form onsubmit="cadastraClientes()" autocomplete="off">
+        <h1 id="inscricao"><span>Inscrição</span></h1>
+        <input name="nome" placeholder="Nome Completo" type="text" id="nome" size="60" autocomplete="off" /><br />
+        <input name="email" placeholder="E-mail" type="e-mail" id="email" autocomplete="off" size="8" /><br />
+        <input name="senha" placeholder="Senha" type="password" id="senha" size="8" /><br />
+        <input name="telefone" placeholder="(xx) 9xxxx-xxxx" type="tel" pattern="\([0-9]{2}\) [9]{1}[0-9]{4}-[0-9]{4}"
+            id="telefone" size="8" /><br />
+        <input name="cep" placeholder="Cep" type="number" id="cep" value="" size="10" maxlength="9" autocomplete="off"
+            onblur="pesquisacep(this.value);" /></label><br />
+        <input name="rua" placeholder="Rua" type="text" id="rua" size="60" /><br />
+        <input name="numero" placeholder="Numero" step="none" type="number" id="numero" size="8" /><br />
+        <input name="complemento" placeholder="Complemento" type="text" id="complemento" size="8" /><br />
+        <input name="bairro" placeholder="Bairro" type="text" id="bairro" size="40" /><br />
+        <input name="cidade" placeholder="Cidade" type="text" id="cidade" size="40" /><br />
+        <input name="uf" placeholder="Uf" type="text" id="uf" size="2" /><br />
+        <button onclick="cadastrar()" type="submit">Enviar</button>
+    </form>
+
+    <a href="#inicio" id="link-topo">
+        <i>^</i>
+    </a>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2022 - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
